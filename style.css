@@ -1,0 +1,385 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* *********************************************************************** NAV ************************** */
+.nav {
+    overflow: hidden;
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    display: inline;
+    background-color: #38444d;
+    z-index: 1;
+}
+
+.nav li {
+    float: left;
+}
+
+/********************************** NAV TITRE LOGO ************ */
+.titre li {
+    padding: 5px;
+}
+
+h1 {
+    padding-top: 6px;
+    font-size: 20px;
+    color: gold;
+}
+
+/*************************************** NAV MEMU */
+.menu li {
+    float: right;
+    padding-top: 10px;
+}
+
+.menu li a {
+    text-align: justify;
+    padding: 23px;
+    font-size: 14px;
+    color: white;
+}
+
+.menu li a:hover {
+    background-color: red;
+}
+
+/* ******************************************** NOUS CONTACTER ************************** */
+
+/* Full-width input fields */
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=message] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/* ******************************** HOMEPAGE ************************** */
+/* ******************************** HOMEPAGE ************************** */
+/* ******************************** HOMEPAGE ************************** */
+/* ******************************** HOMEPAGE ************************** */
+#homepage {
+    -webkit-animation: animatezoom 0.6s;
+
+    animation: animatezoom 0.6s;
+
+    @-webkit-keyframes animatezoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+
+    @keyframes animatezoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+}
+
+#slider {
+    background: url(./images/homeimage.webp);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+/* **************************************** INTRODUCTION */
+.intro1 {
+    margin: 30px 90px 0 90px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+    background-color: white;
+}
+
+/* *********************************** OUR SERVICES ***************** */
+
+.service h3 {
+    margin: 40px 0 0 0;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    color: red;
+}
+
+.service {
+    display: inline-block;
+}
+
+.service img {
+    width: 520px;
+    height: 320px;
+    border-radius: 10%;
+}
+
+
+.service h4 {
+    margin-left: 20px;
+    text-decoration: underline;
+    color: #04AA6D;
+}
+
+
+.service p {
+    margin: 0 50px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 35px;
+    text-align: justify;
+}
+
+/* **************************** NEWS********************** */
+/* **************************** NEWS********************** */
+/* **************************** NEWS********************** */
+
+#new {
+    display: none;
+
+    -webkit-animation: animatezoom 0.6s;
+
+    animation: animatezoom 0.6s;
+
+    @-webkit-keyframes animatezoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+
+    @keyframes animatezoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+}
+
+.new h2 {
+    padding-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    color: dodgerblue;
+}
+
+.new h4 {
+    color: #04AA6D;
+    margin-left: 15px;
+}
+
+.new p {
+    margin: 0 65px;
+    line-height: 25px;
+    text-align: justify;
+    font-size: 13px;
+}
+
+/* *********************** MEDIA QUERYT **************** */
+@media (min-width: 380px)and (max-width: 1080px) {
+
+
+
+    .new h2 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .new p {
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+
+/* **************************** FOOTER */
+
+.copyright,
+.copyright a {
+    color: black;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* ******************************* MEDIA QUERY */
+
+@media (min-width: 380px)and (max-width: 1080px) {
+
+
+    /*************************************** NAV MEMU */
+    .menu li {
+        float: right;
+        padding-top: 10px;
+    }
+
+    .menu li a {
+        font-size: 10px;
+    }
+
+    /* *********************************** OUR SERVICES ***************** */
+
+
+    h3 {
+        margin: 50px 0 0 0;
+        padding: 15px 0 0 0;
+        font-size: 15px;
+        text-align: center;
+        color: dodgerblue;
+    }
+
+
+    .service div {
+        justify-content: center;
+        margin: 30px 7px;
+    }
+
+    .service img {
+        width: 450px;
+        height: 300px;
+        border-radius: 10%;
+    }
+
+    /* **************************** FOOTER */
+
+    .copyright,
+    .copyright a {
+        font-size: 10px;
+    }
+}

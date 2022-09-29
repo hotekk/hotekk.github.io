@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Set a style for all buttons */
+        a {
+            color: #04AA6D;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+
+        /* Center the image and position the close button */
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+            position: relative;
+        }
+
+        img.avatar {
+            width: 20%;
+            border-radius: 30%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+
+        /* The Modal (background) */
+        .modal {
+            display: block;
+            z-index: 1;
+
+            left: 0;
+            top: 0;
+            width: 100%;
+
+            height: 100%;
+
+            overflow: auto;
+
+            padding-top: 6px;
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto;
+            width: 80%;
+        }
+
+
+        .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s
+        }
+
+        @-webkit-keyframes animatezoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        h1 {
+            line-height: 30px;
+            text-align: center;
+        }
+
+        h2,
+        h3 {
+            text-align: center;
+            line-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="students" class="modal">
+
+        <form class="modal-content animate" action="./index.html">
+            <div class="imgcontainer">
+                <img src="./images/HOTEK.LOGO.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <h1>Votre message a été bien envoyé à l'équipe HOTEK WORLD</h1>
+                <h3>Nous vous contacterons très bientôt mais en cas d'urgence, n'hésitez pas à nous <a
+                        href="https://wa.me/+22893878238" target="_blank">envoyer
+                        un message direct sur WhatsApp</a> ou <br>nous <a href="tel:+22893878238"
+                        target="_blank">appeler directement</a>
+                </h3>
+
+                <h2>Merci.</h2>
+
+
+                <button>Retour à la page d'accueil</button>
+
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

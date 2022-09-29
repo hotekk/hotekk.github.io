@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEK TRAVEL</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/HOTEK.LOGO.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5bb070511e.js" crossorigin="anonymous"></script>
+    <script src="./hotek.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <!-- ****************************************** NAV **************************         -->
+        <nav class="nav">
+            <!-- ********************************** NAV TITRE LOGO -->
+            <ul class="titre">
+                <li id="home">
+                    <a href="./index.html">
+                        <h1 class="font-effect-fire">HOTEK WORLD</h1>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- *************************************** NAV MEMU  -->
+            <ul class="menu">
+                <li onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="about"><a
+                        href="#">Nous Contacter</a></li>
+                <li onclick="news()"><a href="#">Actualités</a></li>
+                <li class="home"><a href="./index.html">Accueil</a></li>
+            </ul>
+        </nav>
+
+        <!-- *************************************** NOUS CONTACTER ****************** -->
+
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" target="_blank" action="https://formsubmit.co/messanericekoue@gmail.com"
+                method="POST">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+
+
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <img src="./images/HOTEK.LOGO.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="name"><b>Noms</b></label>
+                    <input type="text" name="name" placeholder="Saisissez votre Nom" required>
+
+                    <label for="emai"><b>Adresse Email</b></label>
+                    <input type="email" name="email" placeholder="Saisissez votre Email" required>
+
+                    <label for="telephone"><b>Numéro de telephone</b></label>
+                    <input type="tel" name="telephone"
+                        placeholder="Saisissez votre Numéro de telephone suivit de l'indicatif de votre pays" required>
+
+                    <label for="message"><b>Votre Message</b></label>
+                    <input type="message" name="message" placeholder="Saisissez Votre Message">
+
+                    <button type="submit">Envoyer</button>
+
+                </div>
+            </form>
+        </div>
+
+        <!-- ***************************** SCRIPT ************************** -->
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+    </header>
+    <!-- ****************************************** ANNIMATION **************************         -->
+    <div id="homepage">
+        <div id="slider"></div>
+
+        <!-- ************************************ INTRODUCTION -->
+        <p class="intro1">HOTEK est une association créée par des
+            personnes de divers profils vivant de part le monde
+            ayant décidé de mettre leurs compétences à profit à leurs jeunes frères. <br>
+            Par ses actions, elle vient répondre à plusieurs difficultés que rencontrent les jeunes dans le processus
+            d'étude ou de travail à l'étranger.
+            <br><b> Du pays de départ, au pays d'accueil,
+                notre objectif reste le même: rendre le processus le mois stressant pour vous.</b>
+        </p>
+
+        <!-- *********************************** OUR SERVICES ************************************ -->
+
+        <div class="service">
+            <div>
+                <h3>ÉTUDIER EN FRANCE OU EN BEGIQUE <br> <br>
+                    <img src="./images/france.jpg" alt="france">
+                </h3> <br>
+                <p>
+                    Pays d'Europe francophone aux conditions de vie abordables pour les étudiants, la France est l'une
+                    des
+                    destinations les plus prisées des étudiants francophones où il est possible de financer leurs études
+                    en
+                    travaillant. Nous vous proposons 3 packs pour vous accompagner :
+                </p> <br>
+
+                <h4>PACK 1 : ADMISSION</h4>
+                <p>
+                    - Définition du projet d'étude selon la norme française <br>
+                    - Rédaction du projet d'etude et professionnel <br>
+                    - Recherche d'universités pour faciliter l'acceptation <br>
+                    - Préparation à l'entretien
+                </p> <br>
+
+                <h4>PACK 2 : APRES ADMISSION</h4>
+
+                <p>
+                    <strong>PACK 1</strong>
+                    +
+                    - Recherche de logement <br>
+                    - Assistance pour la demande de VISA long séjour
+                </p><br>
+
+                <h4>PACK 3 : INTEGRATION</h4>
+                <p>
+                    <strong> PACK 2</strong>
+                    +
+                    - Accueil à l'aéroport et installation dans l'appartement <br>
+                    - Assistance dans les démarches administratives dans le pays <br>
+                    - Aide à la recherche de travail étudiant
+                </p> <br>
+
+                <p>
+                    <strong>Pour en savoir plus sur les différentes manières d'étudier en France, merci de nous laisser
+                        un message dans en cliquant <a href="https://wa.me/+971581622813" target="_blank">ici</a> ou
+                        un e-mail par en cliquant <a href="mailto:messanericekoue@gmail.com" target="_blank">ici</a>
+                    </strong>
+                </p>
+                <br>
+                <br>
+            </div>
+
+            <hr>
+
+            <div>
+                <h3>ÉTUDIER EN ALLEMAGNE<br> <br>
+                    <img src="./images/gernamy.jpg" alt="germany">
+                </h3> <br>
+
+
+                <p>En tant que première puissance économique européenne, l'Allemagne offre des opportunités d'études et
+                    de travail aux étudiants du monde entier. <br>
+                    C'est un très bon pays pour s'installer <strong>mais il faut savoir apprendre la langue</strong>.
+                    Grâce à nos partenaires, vous aviez la possibilité de suivre le cours de langue à un tarif
+                    réduit. <br>
+                    Nous nous occuperons de: <br>
+                    <strong>
+                        - Trouvez votre formation universitaire ou rémunérée (Soins infirmiers) <br>
+                        - Constituez votre dossier de visa <br>
+                        - vous Préparez pour l'entretien à l'ambassade <br>
+                    </strong>
+                </p>
+            </div>
+            <br>
+            <br>
+
+            <hr>
+
+            <div>
+                <h3>ÉTUDIER EN CHINE <br> <br>
+                    <img src="./images/china.jpg" alt="CHINE">
+                </h3> <br>
+
+                <p>Longtemps fermée au monde, la deuxième économie mondiale attire des étudiants du monde entier
+                    grâce à des programmes de bourses partielles ou complètes selon votre profil.
+                    <br>
+                    <br>
+                    <strong>NB : Il n'est pas possible de financer ses études en travaillant en Chine, l'étudiant doit
+                        donc prévoir un budget en fonction de la durée de votre séjour.</strong>
+                </p>
+            </div>
+            <br>
+            <br>
+
+            <hr>
+
+            <div>
+                <h3>BOURSES D'ÉTUDES <br> <br>
+                    <img src="./images/scholoarship.webp" alt="new">
+                </h3> <br>
+                <p>
+                    Nous accompagnons également les étudiants souhaitant solliciter une bourse pour financer
+                    l'ensemble de leurs études à l'étranger. <br>
+
+                    Voici quelques bourses très convoitées pour les étudiants africains: <br>
+
+                    <strong>
+                        -Bourses Cheveling <br>
+                        - Bourse Fulbright <br>
+                        - Bourse MEXT <br>
+                        - Turquie Buslari….
+                    </strong>
+                </p>
+            </div>
+            <br>
+            <br>
+
+            <hr>
+
+            <div>
+                <h3>FORMATION ET ÉTUDE<br> <br>
+                    <img src="./images/training.webp" alt="news">
+                </h3> <br>
+                <p>
+                    Nos experts vous aident donc à la : <br>
+                    <strong>
+                        - Rédaction d'une proposition de recherche (e-book disponible sur commande) <br>
+                        - Rédaction académique et correction de mémoires <br>
+                        - Formation sur la présentation des diapositives par codage <br>
+                        - Conseils et orientation scolaire <br> <br>
+                    </strong>
+                    NB : Pas besoin d'être surdoué pour obtenir une bourse.
+                </p>
+            </div>
+            <br>
+            <br>
+
+            <hr>
+
+            <div>
+                <h3>TRAVAILLER A L'ETRANGER <br> <br>
+                    <img src="./images/work-permit.webp" alt="nwxs">
+                </h3> <br>
+                <p>
+                    Pour le moment, le pays disponible pour le visa de travail est :
+                    <strong>Émirats Arabes Unis</strong>
+                    <br>
+                    - Visa Touristique <br>
+                    - Work-permit pour pouvoir travailler légalement
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ****************************************************************************************** NEWS *************************************************************************************** -->
+
+    <div class="new" id="new">
+        <div id="slider"></div>
+
+        <h2>LES EXIGENCES DES UNIVERSITES FRANCAISES</h2>
+        <br>
+        <br>
+
+        <p> Bientôt, l'ouverture des procédures CAMPUS FRANCE pendant laquelle beaucoup d'étudiants tenteront d'obtenir
+            une admission dans une université française. L'année dernière, selon les statistiques publiées par l'agence
+            française intermédiaire entre les universités et les étudiants, plus de la moitié des étudiants venant
+            d'Afrique ont eu un avis défavorable à la suite de leur candidature. Même si les causes sont variées, les
+            refus ne sont pas liés à une atteinte de quota comme beaucoup aime le faire croire.
+            La France est un pays européen possédant des universités de référence qui cherchent à se hisser haut dans le
+            classement mondiale et la majorité des universités Africaines occupent les derniers rang du classement
+            mondial.
+            <br>
+            <b><i>Pourquoi une meilleure université dois accepter moi qui vient d'une université moins
+                    reconnue?.</i></b> Aussi simple qu'elle puisse paraître, la réponse à cette question aidera bon
+            nombre à ne pas faire
+            certaines erreurs. <br> <br>
+
+            <strong>Nous vous proposons deux réponses parmi une multitude pour vous amener à voir l'importance de la
+                préparation</strong>
+        </p>
+        <br>
+        <br>
+
+
+        <h4>1. AVOIR DE BON RESULTATS</h4>
+        <br>
+
+        <p>
+            J'ouvre une petite parenthèse pour dire même si certains ont reçu des admissions par chance, <b>TOUT LE
+                MONDE
+                ne peut pas aller étudier dans les Universités Publiques Françaises.</b>
+
+            Les universités se disputent les très bon étudiants mais choisissent aussi les profils qui les aspirent
+            confiance afin de les peaufiner pour un rendu final sur le marché de l'emploi. Ainsi, l'Université est
+            certaine que vous réussirez tout en l'aidant aussi à augmenter dans le classement mondial. Avoir une mention
+            Assez-Bien par exemple vous donne plus de chance d'être accepter si jamais votre dossier est bon.
+        </p>
+        <br>
+        <br>
+
+        <h4>2. Le Choix de Filière</h4> <br>
+
+        <p>
+            Aucune université, dans sa lettre de refus, même si elle le sait ne vous dira que vous êtes trompé de
+            filière. Mal s'orienter est un luxe qu'un étudiant moyen ne peut se permettre dans ses choix de formation
+            puisque le très bon étudiant pourrait être accepté en cas de mauvais choix.
+            <br>
+
+            Avoir une mention Assez-Bien ne suffit pas, il faut avoir une bonne note dans les matières en lien avec la
+            formation que tu rêves de faire en France. Par exemple, un élève qui a son BAC mention Assez avec une note
+            inférieur à 12 dans les matières scientifiques aura plus du mal à avoir une admission dans les formations
+            dans lesquelles les disciplines scientifiques sont présentes....
+
+            <br>
+            <br>
+
+            <strong>N'hésitez pas à nous contacter pour une étude approfondie de votre dossier afin de profiter de notre
+                expertise pour augmenter vos chances d'admission.</strong>
+        </p>
+    </div>
+
+
+    <!-- ******************************************************************************************* FOOTER ******************************************************************** -->
+    <footer class="footer">
+
+        <p class="copyright"><a href="./pages/terms_conditions.html" target="_blank">Termes et conditions</a></p>
+
+        <p class="copyright">© Copyright 2022. All Rights Reserved by MESSAN ERIC </p>
+
+    </footer>
+
+</body>
+
+</html>
